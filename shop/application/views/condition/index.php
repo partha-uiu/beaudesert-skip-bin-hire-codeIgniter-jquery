@@ -1,0 +1,1 @@
+<?php $this->load->view($this->theme->path('content/condition.htm')); ?>

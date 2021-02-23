@@ -1,0 +1,580 @@
+/*
+Beaudesert Area Skip Bin Hire
+
+
+BASE (MOBILE) SIZE
+	These are the mobile styles. It's what people see on their phones.
+	
+*/
+
+/* typography */
+body { 
+color : #666; 
+font-family : 'Ubuntu', Arial, Helvetica, sans-serif; 
+font-size : 1em; 
+line-height : 1.4em; 
+font-weight : normal; 
+} 
+h1, h2, h3, h4, h5, h6 { 
+font-weight : normal; 
+font-family : 'Droid Serif', Arial, Helvetica, sans-serif; 
+line-height : 1.5em; 
+margin : 0.45em 0; 
+padding : 0; 
+} 
+a, a:visited, a:active, a:hover { 
+color : #0099ff; 
+} 
+a:hover { 
+text-decoration : none; 
+} 
+* { 
+box-sizing : border-box; 
+} 
+.wrapper { 
+width : 92%; 
+margin : 0 auto; 
+} 
+header { 
+padding : 15px 0; 
+} 
+#banner { 
+top : 0; 
+margin-left : 10px; 
+margin-bottom: -40px !important;
+} 
+#phone {
+  float: right;
+  padding-top: 55px;
+  padding-right: 20px;
+  font-size: 16px;
+}
+#hero, #page-header { 
+background : #f3f3f3; 
+border-top : 1px solid #e2e2e2; 
+border-bottom : 1px solid #e2e2e2; 
+padding : 20px 0; 
+} 
+#hero h1 { 
+line-height : 1.2em; 
+margin-top : 0; 
+margin-bottom : 10px; 
+} 
+.flexslider { 
+display : none; 
+} 
+#content { 
+  padding-left: 50px;
+  padding-bottom: 35px;
+} 
+aside { 
+margin : 40px 0; 
+} 
+p { 
+margin : 0 0 1.5em; 
+} 
+img { 
+max-width : 100%; 
+height : auto; 
+} 
+#menu, #menu ul { 
+margin : 0; 
+padding : 0; 
+list-style : none; 
+} 
+#menu { 
+width : 98%; 
+margin : 60px auto; 
+border : #222 solid 1px; 
+background-color : #111; 
+background-image : linear-gradient(#444, #111); 
+border-radius : 6px; 
+box-shadow : 0 1px 1px #777, 0 1px 0 #666 inset; 
+} 
+#menu:before, #menu:after { 
+content : ""; 
+display : table; 
+} 
+#menu:after { 
+clear : both; 
+} 
+#menu li { 
+float : left; 
+border-right : 1px solid #222; 
+box-shadow : 1px 0 0 #444; 
+position : relative; 
+} 
+#menu a { 
+float : left; 
+padding : 12px 30px; 
+color : #999; 
+text-transform : uppercase; 
+font : bold 12px Arial, Helvetica; 
+text-decoration : none; 
+text-shadow : 0 1px 0 #000; 
+} 
+#menu li:hover > a { 
+color : #fafafa; 
+} 
+#menu ul { 
+margin : 20px 0 0 0; 
+opacity : 0; 
+visibility : hidden; 
+position : absolute; 
+top : 38px; 
+left : 0; 
+z-index : 1; 
+background : #444; 
+background : linear-gradient(#444, #111); 
+box-shadow : 0 -1px 0 rgba(255, 255, 255, 0.3); 
+border-radius : 3px; 
+transition : all 0.2s ease-in-out; 
+} 
+#menu li:hover > ul { 
+opacity : 1; 
+visibility : visible; 
+margin : 0; 
+} 
+#menu ul ul { 
+top : 0; 
+left : 150px; 
+margin : 0 0 0 20px; 
+box-shadow : -1px 0 0 rgba(255, 255, 255, 0.3); 
+} 
+#menu ul li { 
+float : none; 
+display : block; 
+border : 0; 
+box-shadow : 0 1px 0 #111, 0 2px 0 #666; 
+} 
+#menu ul li:last-child { 
+box-shadow : none; 
+} 
+#menu ul a { 
+padding : 10px; 
+width : 130px; 
+display : block; 
+white-space : nowrap; 
+float : none; 
+text-transform : none; 
+} 
+#menu ul a:hover { 
+background-color : #0186ba; 
+background-image : linear-gradient(#04acec, #0186ba); 
+} 
+#menu ul li:first-child > a { 
+border-radius : 3px 3px 0 0; 
+} 
+#menu ul li:first-child > a:after { 
+content : ''; 
+position : absolute; 
+left : 40px; 
+top : -6px; 
+border-left : 6px solid transparent; 
+border-right : 6px solid transparent; 
+border-bottom : 6px solid #444; 
+} 
+#menu ul ul li:first-child a:after { 
+left : -6px; 
+top : 50%; 
+margin-top : -6px; 
+border-left : 0; 
+border-bottom : 6px solid transparent; 
+border-top : 6px solid transparent; 
+border-right : 6px solid #3b3b3b; 
+} 
+#menu ul li:first-child a:hover:after { 
+border-bottom-color : #04acec; 
+} 
+#menu ul ul li:first-child a:hover:after { 
+border-right-color : #0299d3; 
+border-bottom-color : transparent; 
+} 
+#menu ul li:last-child > a { 
+border-radius : 0 0 3px 3px; 
+} 
+#menu-trigger { 
+display : none; 
+} 
+@media screen and (max-width:600px) { 
+#menu-wrap { 
+position : relative; 
+} 
+#menu-wrap * { 
+box-sizing : border-box; 
+} 
+#menu-trigger { 
+display : block; 
+height : 40px; 
+line-height : 40px; 
+cursor : pointer; 
+padding : 0 0 0 35px; 
+border : #222 solid 1px; 
+color : #fafafa; 
+font-weight : bold; 
+background-color : #111; 
+border-radius : 6px; 
+box-shadow : 0 1px 1px #777, 0 1px 0 #666 inset; 
+} 
+#menu { 
+margin : 0; 
+padding : 10px; 
+position : absolute; 
+top : 40px; 
+width : 100%; 
+z-index : 1; 
+background-color : #444; 
+display : none; 
+box-shadow : none; 
+} 
+#menu:after { 
+content : ''; 
+position : absolute; 
+left : 25px; 
+top : -8px; 
+border-left : 8px solid transparent; 
+border-right : 8px solid transparent; 
+border-bottom : 8px solid #444; 
+} 
+#menu ul { 
+position : static; 
+visibility : visible; 
+opacity : 1; 
+margin : 0; 
+background : none; 
+box-shadow : none; 
+} 
+#menu ul ul { 
+margin : 0 0 0 20px !important ; 
+box-shadow : none; 
+} 
+#menu li { 
+position : static; 
+display : block; 
+float : none; 
+border : 0; 
+margin : 5px; 
+box-shadow : none; 
+} 
+#menu ul li { 
+margin-left : 20px; 
+box-shadow : none; 
+} 
+#menu a { 
+display : block; 
+float : none; 
+padding : 0; 
+color : #999; 
+} 
+#menu a:hover { 
+color : #fafafa; 
+} 
+#menu ul a { 
+padding : 0; 
+width : auto; 
+} 
+#menu ul a:hover { 
+background : none; 
+} 
+#menu ul li:first-child a:after, #menu ul ul li:first-child a:after { 
+border : 0; 
+} 
+} 
+@media screen and (min-width:600px) { 
+#menu { 
+display : block !important ; 
+} 
+} 
+.no-transition { 
+transition : none; 
+opacity : 1; 
+visibility : visible; 
+display : none; 
+} 
+#menu li:hover > .no-transition { 
+display : block; 
+} 
+footer { 
+clear : both; 
+font-size : 80%; 
+padding : 20px 0; 
+} 
+footer ul { 
+margin : 0; 
+padding : 0; 
+} 
+body { 
+background : #fff; 
+} 
+h1, h2, h3, h4, h5, h6 { 
+color : #333; 
+} 
+footer { 
+background : #333; 
+color : #ccc; 
+} 
+footer h1, footer h2, footer h3, footer h4 { 
+color : #CCC; 
+margin-bottom : 10px; 
+} 
+footer ul { 
+margin : 0 0 0 8%; 
+} 
+a.buttonlink { 
+background : #5ec79e; 
+border-radius : 7px; 
+color : #fff; 
+display : block; 
+float : left; 
+margin : 10px 15px 10px 0; 
+padding : 10px; 
+text-decoration : none; 
+} 
+a.buttonlink:hover { 
+background : #887dc2; 
+} 
+.greenelement { 
+background : #5ec79e; 
+color : #fff; 
+} 
+.violetelement { 
+background : #887dc2; 
+color : #fff; 
+} 
+.clearfix:before, .clearfix:after, .row:before, .row:after { 
+content : " "; 
+display : table; 
+} 
+.clearfix:after, .container:after, .row:after { 
+clear : both; 
+} 
+@media only screen and (min-width:481px) { 
+#banner { 
+float : left; 
+text-align : left; 
+margin-bottom : -20px; 
+} 
+.menu-toggle { 
+margin-top : 10px; 
+float : right; 
+} 
+} 
+@media only screen and (min-width:920px) { 
+.wrapper { 
+max-width : 1200px; 
+margin : 0.75em auto; 
+} 
+#banner { 
+float : left; 
+text-align : left; 
+/*margin-bottom : 0; */
+} 
+header { 
+padding : 0; 
+} 
+#content { 
+float : left; 
+width : 65%; 
+} 
+#content.wide-content { 
+float : none; 
+width : 100%; 
+} 
+.flexslider { 
+display : block; 
+margin : 0 0 60px; 
+background : #fff; 
+border : #fff solid 4px; 
+border-radius : 4px; 
+box-shadow : 0 1px 4px rgba(0, 0, 0, 0.2); 
+} 
+aside { 
+float : right; 
+width : 30%; 
+} 
+.menu-toggle { 
+display : none; 
+} 
+#menu-main-navigation { 
+display : block; 
+} 
+.srt-menu, .srt-menu * { 
+margin : 0; 
+padding : 0; 
+list-style : none; 
+} 
+.srt-menu ul { 
+position : absolute; 
+display : none; 
+width : 12em; 
+} 
+.srt-menu ul li { 
+width : 100%; 
+} 
+.srt-menu li:hover { 
+visibility : inherit; 
+} 
+.srt-menu li { 
+float : left; 
+position : relative; 
+margin-left : 1px; 
+} 
+.srt-menu li li { 
+margin-left : 0; 
+} 
+.srt-menu a { 
+display : block; 
+position : relative; 
+} 
+.srt-menu li:hover ul, .srt-menu li.sfHover ul { 
+display : block; 
+left : 0; 
+top : 45px; 
+z-index : 99; 
+box-shadow : 2px 3px 2px 0 rgba(0, 0, 0, 0.3); 
+} 
+ul.srt-menu li:hover li ul, ul.srt-menu li.sfHover li ul { 
+top : -999em; 
+} 
+ul.srt-menu li li:hover ul, ul.srt-menu li li.sfHover ul { 
+left : 12em; 
+top : 0; 
+} 
+ul.srt-menu li li:hover li ul, ul.srt-menu li li.sfHover li ul { 
+top : -999em; 
+} 
+ul.srt-menu li li li:hover ul, ul.srt-menu li li li.sfHover ul { 
+left : 10em; 
+top : 0; 
+} 
+#topnav, .srt-menu { 
+float : right; 
+margin : 0.35em 0 0 0; 
+} 
+.srt-menu a { 
+text-decoration : none; 
+} 
+.srt-menu li a { 
+background : #fff; 
+margin : 0; 
+padding : 10px 20px; 
+height : 45px; 
+} 
+.srt-menu a, .srt-menu a:visited { 
+color : #0099ff; 
+} 
+.srt-menu li li a { 
+border-top : 1px solid rgba(255, 255, 255, 0.2); 
+background : #333; 
+background : rgba(0, 0, 0, 0.6); 
+color : #fff; 
+padding-left : 20px; 
+height : auto; 
+} 
+.srt-menu li li a:visited { 
+color : #fff; 
+} 
+.srt-menu li li li a, .srt-menu li.current * li a { 
+padding-left : 20px; 
+background : rgba(0, 0, 0, 0.6); 
+} 
+.srt-menu li:hover > a, .srt-menu li.current a { 
+color : #fff; 
+background : #0099ff; 
+} 
+.srt-menu li li:hover > a { 
+color : #fff; 
+background : #0099ff; 
+} 
+.row { 
+margin-left : -15px; 
+margin-right : -15px; 
+} 
+.grid_1 { 
+width : 8.33333333%; 
+} 
+.grid_2 { 
+width : 16.66666667%; 
+} 
+.grid_3 { 
+width : 25%; 
+} 
+.grid_4 { 
+width : 33.33333333%; 
+} 
+.grid_5 { 
+width : 41.66666667%; 
+} 
+.grid_6 { 
+width : 50%; 
+} 
+.grid_7 { 
+width : 58.33333333%; 
+} 
+.grid_8 { 
+width : 66.66666667%; 
+} 
+.grid_9 { 
+width : 75%; 
+} 
+.grid_10 { 
+width : 83.33333333%; 
+} 
+.grid_11 { 
+width : 91.66666667%; 
+} 
+.grid_12 { 
+width : 100%; 
+} 
+.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12 { 
+float : left; 
+display : block; 
+} 
+.rightfloat { 
+float : right; 
+} 
+#hero [class*="grid_"] { 
+margin-bottom : -20px; 
+} 
+} 
+@media only screen and (min-width:1030px) 
+@media only screen and (min-width:1240px) 
+@media print { 
+* { 
+background : transparent !important ; 
+color : black !important ; 
+text-shadow : none !important ; 
+} 
+a, a:visited { 
+text-decoration : underline; 
+} 
+a[href]:after { 
+content : " (" attr(href) ")"; 
+} 
+abbr[title]:after { 
+content : " (" attr(title) ")"; 
+} 
+.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+content : ""; 
+} 
+pre, blockquote { 
+border : #999 solid 1px; 
+page-break-inside : avoid; 
+} 
+thead { 
+display : table-header-group; 
+} 
+tr, img { 
+page-break-inside : avoid; 
+} 
+img { 
+max-width : 100% !important ; 
+} 
+p, h2, h3 { 
+orphans : 3; 
+widows : 3; 
+} 
+h2, h3 { 
+page-break-after : avoid; 
+} 
+}
